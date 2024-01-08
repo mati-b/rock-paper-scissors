@@ -3,11 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./rock-paper-scissors/scissor.png">
+    <script
+      src="https://kit.fontawesome.com/4c536a6bd5.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Rocks, Papers & Scissors</title>
 </head>
 
 <body>
-    <h1>watch the console</h1>
-    <script src="script.js"></script>
+    <header>
+        <h1 class="title">Rocks, Papers & Scissors</h1>
+    </header>
+
+    <main class="main">
+        <div class="scoreboard">
+            <h2 class="score-info" id="scoreInfo">Select one:</h2>
+            <h3 class="score-message" id="scoreMessage">
+                First to score 5 win!
+            </h3>
+            <div class="score-container">
+                <div class="score-box">
+                    <div class="sign" id="playerSign">❔</div>
+                    <p class="score" id="playerScore">Player: 0</p>
+                </div>
+                <div>
+                    <div class="sign" id="compSign">❔</div>
+                    <p class="score" id="computerScore">Computer: 0</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+
+    
+
+    <div class="buttons">
+        <button class="btn btn-square" id="rockBtn"> <img src="rock-paper-scissors/rock.png" alt="Rock"></button>
+        <button class="btn btn-square" id="paperBtn"> <img src="rock-paper-scissors/paper.png" alt="Paper"></button>
+        <button class="btn btn-square" id="scissorsBtn"> <img src="rock-paper-scissors/scissor.png" alt="Scissors"></button>
+
+    </div>
+
+    <div class="modal" id="endgameModal">
+        <p class="modal-title" id="endgameMsg"></p>
+        <button class="btn btn-restart" id="restartBtn">Play again</button>
+    </div>
+    <div class="overlay" id="overlay"></div>
+    
+
+
+
+    <footer>
+        <p>Copyright ©
+            <script>
+                document.write(new Date().getFullYear())
+            </script>
+            mati-b
+        </p>
+        <a href="https://github.com/mati-b" target="_blank">
+            <i class="fab fa-github"  aria-hidden="true"></i>
+        </a>
+
+    </footer>
+    
+    
+
 </body>
 </html>
