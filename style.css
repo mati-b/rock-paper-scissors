@@ -100,7 +100,7 @@ main {
     justify-content: space-evenly;
     flex-wrap: wrap;
     margin-bottom: 5em;
-    gap: 2em;
+    gap: 2.5em;
 }
 
 img {
